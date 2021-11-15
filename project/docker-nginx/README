@@ -1,0 +1,4 @@
+
+Steps to run UI server:Nginx
+1. docker pull nginx:1.15
+2. docker run -d --name nginx --rm -p 80:80 -v $(pwd)/ui:/usr/share/nginx/html nginx:1.15

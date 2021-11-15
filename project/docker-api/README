@@ -1,0 +1,5 @@
+Steps to run API server:Django server
+1. cd docker-api
+2. docker build . -t apiserver:latest
+3. cd ../
+4. docker run -p 8000:8000 -v $(pwd):/home/app -d --name apiserver apiserver:latest
